@@ -4,6 +4,11 @@ import java.util.ArrayList;
 
 public class Nodes {
     private ArrayList<String[]> nodes = new ArrayList<>();
+    private String startNode;
+
+    public Nodes(String startNode) {
+        this.startNode = startNode;
+    }
 
     public Nodes() {
     }
@@ -63,5 +68,13 @@ public class Nodes {
         for (String[] node : nodes) {
             System.out.println("[" + node[0] + ", " + node[1] + "]");
         }
+    }
+
+    /**
+     * @return String
+     *         {@summary} This will provide access to the start node
+     */
+    public String getStartNode() {
+        return this.startNode;
     }
 }

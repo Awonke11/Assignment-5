@@ -13,14 +13,27 @@ public class Perfomance {
         this.dataSize = dataSize;
     }
 
+    /**
+     * @return Integer
+     */
     public Integer getOccurance() {
         return this.occurance;
     }
 
+    public void incrementOccurance() {
+        this.occurance++;
+    }
+
+    /**
+     * @return Integer
+     */
     public Integer getDataSize() {
         return this.dataSize;
     }
 
+    /**
+     * @return String
+     */
     public String evaluatePerfomance() {
         if (this.occurance == 1) {
             return "Constant: O(1)";
