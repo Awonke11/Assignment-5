@@ -24,4 +24,12 @@ public class TestDirected {
     public void showTraversal() {
         directed.depthFirstTraversal(generateNodes.startNode);
     }
+
+    /**
+     * @return String
+     *         Shows the perfomance
+     */
+    public String showPerfomance() {
+        return directed.getPerfomance();
+    }
 }

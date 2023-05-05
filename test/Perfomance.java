@@ -37,9 +37,11 @@ public class Perfomance {
     public String evaluatePerfomance() {
         if (this.occurance == 1) {
             return "Constant: O(1)";
-        } else if (this.occurance > 1 && this.occurance <= this.dataSize) {
+        }
+        if (this.occurance > 1) {
             return "Linear: O(n)";
-        } else if (this.occurance <= Math.sqrt(this.dataSize) && this.occurance > this.dataSize) {
+        }
+        if (this.occurance <= Math.sqrt(this.dataSize) && this.occurance > this.dataSize) {
             return "Quadratic: O(n**2)";
         }
         return "";

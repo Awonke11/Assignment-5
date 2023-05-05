@@ -24,4 +24,12 @@ public class TestUndirected {
     public void showTraversal() {
         undirected.depthFirstTraversal(generateNodes.startNode);
     }
+
+    /**
+     * @return String
+     *         Shows the perfomance
+     */
+    public String showPerfomance() {
+        return undirected.getPerfomance();
+    }
 }

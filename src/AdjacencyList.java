@@ -9,6 +9,11 @@ public class AdjacencyList {
         this.nodes = nodes;
     }
 
+    /**
+     * @return Hash
+     *         Converting the Nodes (Treating them as directed : A > B only) into an
+     *         adjacency list
+     */
     public Hash getHashListDirected() {
         Hash hash = new Hash();
 
@@ -23,6 +28,11 @@ public class AdjacencyList {
         return hash;
     }
 
+    /**
+     * @return Hash
+     *         Converting the Nodes (Treating them as undirected : A > B and B > A)
+     *         into an adjacency list
+     */
     public Hash getHashListUndirected() {
         Hash hash = new Hash();
 
@@ -40,6 +50,9 @@ public class AdjacencyList {
         return hash;
     }
 
+    /**
+     * @return Nodes
+     */
     public Nodes getNodes() {
         return nodes;
     }
