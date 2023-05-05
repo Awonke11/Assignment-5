@@ -73,8 +73,5 @@ abstract class Graph {
      * @return String
      *         Evaluates the performance of the algorithm
      */
-    public String getPerfomance() {
-        return "Number of executions: " + perfomance.getOccurance() + ". Complexity: "
-                + perfomance.evaluatePerfomance();
-    }
+    public abstract String getPerfomance();
 }
