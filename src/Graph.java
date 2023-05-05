@@ -24,8 +24,7 @@ abstract class Graph {
      * @param source
      *               Dijkstra's shortest paths algorithm
      */
-    public void depthFirstTraversal(String source) {
-    }
+    public abstract void depthFirstTraversal(String source);
 
     /**
      * @param source
